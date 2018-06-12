@@ -1,0 +1,26 @@
+<div class="card">
+  <div class="card-content">
+    <span class="card-title">Add Movie</span>
+    <form (ngSubmit)="onSubmit()" class="col s6">
+      <div class="row">
+        <div class="input-field col s6">
+          <input type="text" placeholder="Add Title" [(ngModel)]="movie.title" name="title">
+          <label>Title</label>
+        </div>
+        <div class="input-field col s6">
+          <input type="text" placeholder="Add Genre" [(ngModel)]="movie.genre" name="genre">
+          <label>Genre</label>
+        </div>
+        <div class="input-field col s6">
+            <input type="text" placeholder="Add Rating" [(ngModel)]="movie.rating" name="rating">
+            <label>Rating</label>
+        </div>
+        <div class="input-field col s6">
+            <input type="text" placeholder="Add Movie id" [(ngModel)]="movie.movie_id" name="movie id">
+            <label>Movie ID</label>
+          </div>
+        <input type="submit" value="Submit" class="btn">
+      </div>
+    </form>
+  </div>
+</div>
